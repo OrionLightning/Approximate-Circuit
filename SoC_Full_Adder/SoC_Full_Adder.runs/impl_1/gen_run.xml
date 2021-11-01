@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1635760147">
+  <File Type="BITSTR-BMM" Name="SOCadder_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SOCadder_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SOCadder_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="SOCadder_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="SOCadder.tcl"/>
+  <File Type="OPT-TIMING" Name="SOCadder_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SOCadder_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="SOCadder_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="SOCadder_reports.tcl"/>
+  <File Type="OPT-DRC" Name="SOCadder_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SOCadder.hwdef"/>
+  <File Type="PWROPT-DCP" Name="SOCadder_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SOCadder_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="SOCadder_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SOCadder_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SOCadder_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SOCadder_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SOCadder_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SOCadder_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SOCadder_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SOCadder_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SOCadder_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="SOCadder_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SOCadder_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="SOCadder.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SOCadder_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SOCadder_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SOCadder_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="SOCadder.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="SOCadder_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SOCadder_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SOCadder_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SOCadder_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="SOCadder_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SOCadder_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="SOCadder_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="SOCadder.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SOCadder_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SOCadder_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SOCadder_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="SOCadder_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="SOCadder_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SOCadder_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SOCadder_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SOCadder_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SOCadder_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SOCadder_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SOCadder_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SOCadder_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="SOCadder_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="SOCadder_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SOCadder_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SOCadder_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SOCadder_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SOCadder_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SOCadder_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SOCadder_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SOCadder_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="SOCadder.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SOCadder_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="SOCadder.rbt"/>
+  <File Type="BITSTR-NKY" Name="SOCadder.nky"/>
+  <File Type="PDI-FILE" Name="SOCadder.pdi"/>
+  <File Type="RCFI_FILE" Name="SOCadder.rcfi"/>
+  <File Type="CFI_FILE" Name="SOCadder.cfi"/>
+  <File Type="RNPI_FILE" Name="SOCadder.rnpi"/>
+  <File Type="NPI_FILE" Name="SOCadder.npi"/>
+  <File Type="RBD_FILE" Name="SOCadder.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SOCadder.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="SOCadder.sysdef"/>
+  <File Type="BG-BGN" Name="SOCadder.bgn"/>
+  <File Type="BG-DRC" Name="SOCadder.drc"/>
+  <File Type="RDI-RDI" Name="SOCadder.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/SOCadder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SOCadder"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
