@@ -1,0 +1,4 @@
+
+
+#Ignore the jupyter notebook checkpoints
+BDD_graph_Python/.ipynb_checkpoints/*
