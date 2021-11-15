@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Nov  1 10:49:07 2021">
+<application name="pa" timeStamp="Mon Nov 15 18:34:21 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f4abc9b53eca4670b539fcda83c64248" type="ProjectID"/>
-<property name="ProjectIteration" value="18" type="ProjectIteration"/>
+<property name="ProjectIteration" value="27" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -20,29 +20,29 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditProperties" value="1" type="JavaHandler"/>
 <property name="FedToggleRoutingResourcesCmdHandler" value="3" type="JavaHandler"/>
 <property name="PowerConstraintsWizard" value="1" type="JavaHandler"/>
-<property name="RunImplementation" value="17" type="JavaHandler"/>
-<property name="RunSchematic" value="3" type="JavaHandler"/>
+<property name="RunImplementation" value="26" type="JavaHandler"/>
+<property name="RunSchematic" value="6" type="JavaHandler"/>
 <property name="RunSynthesis" value="1" type="JavaHandler"/>
 <property name="ShowSource" value="1" type="JavaHandler"/>
 <property name="ShowView" value="3" type="JavaHandler"/>
 <property name="ToggleAutoFitSelection" value="3" type="JavaHandler"/>
 <property name="ToggleCreatePblockMode" value="1" type="JavaHandler"/>
-<property name="ViewTaskImplementation" value="14" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="24" type="JavaHandler"/>
 <property name="ZoomFit" value="2" type="JavaHandler"/>
 <property name="ZoomIn" value="6" type="JavaHandler"/>
 <property name="ZoomOut" value="4" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="BaseDialog_CANCEL" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="47" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="16" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="66" type="GuiHandlerData"/>
+<property name="BaseDialog_YES" value="25" type="GuiHandlerData"/>
 <property name="DefaultOptionPane_CLOSE" value="1" type="GuiHandlerData"/>
 <property name="DeviceView_SHOW_CELL_CONNECTIONS" value="1" type="GuiHandlerData"/>
 <property name="ExpRunMenu_LAUNCH_STEP" value="1" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="9" type="GuiHandlerData"/>
 <property name="ExportSchematicDialog_SPECIFY_FILE" value="2" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="30" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="15" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="34" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="23" type="GuiHandlerData"/>
 <property name="HPopupTitle_CLOSE" value="3" type="GuiHandlerData"/>
 <property name="InstanceMenu_FLOORPLANNING" value="8" type="GuiHandlerData"/>
 <property name="InstanceTablePanel_INSTANCE_TABLE" value="3" type="GuiHandlerData"/>
@@ -58,28 +58,28 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="MainMenuMgr_TEXT_EDITOR" value="2" type="GuiHandlerData"/>
 <property name="MainToolbarMgr_OPEN" value="1" type="GuiHandlerData"/>
 <property name="MainToolbarMgr_OPEN_RECENT_FILE" value="1" type="GuiHandlerData"/>
-<property name="MainToolbarMgr_RUN" value="3" type="GuiHandlerData"/>
+<property name="MainToolbarMgr_RUN" value="4" type="GuiHandlerData"/>
 <property name="NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE" value="7" type="GuiHandlerData"/>
 <property name="NetlistSchMenuAndMouse_EXPAND_COLLAPSE" value="4" type="GuiHandlerData"/>
 <property name="NetlistSchMenuAndMouse_VIEW" value="19" type="GuiHandlerData"/>
 <property name="NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC" value="2" type="GuiHandlerData"/>
 <property name="NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC" value="1" type="GuiHandlerData"/>
 <property name="NetlistSchematicView_SHOW_NETS_IN_THIS_SCHEMATIC" value="1" type="GuiHandlerData"/>
-<property name="NetlistTreeView_NETLIST_TREE" value="32" type="GuiHandlerData"/>
+<property name="NetlistTreeView_NETLIST_TREE" value="34" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_FIT_SELECTION" value="3" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="14" type="GuiHandlerData"/>
 <property name="PACommandNames_BEL_CONST_MODE" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_DRAW_PBLOCK_MODE" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_EXPORT_SCHEMATIC" value="3" type="GuiHandlerData"/>
 <property name="PACommandNames_FED_TOGGLE_ROUTING_RESOURCES" value="3" type="GuiHandlerData"/>
-<property name="PACommandNames_RUN_IMPLEMENTATION" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_SCHEMATIC" value="3" type="GuiHandlerData"/>
+<property name="PACommandNames_RUN_IMPLEMENTATION" value="3" type="GuiHandlerData"/>
+<property name="PACommandNames_SCHEMATIC" value="6" type="GuiHandlerData"/>
 <property name="PACommandNames_ZOOM_FIT" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_ZOOM_IN" value="6" type="GuiHandlerData"/>
 <property name="PACommandNames_ZOOM_OUT" value="4" type="GuiHandlerData"/>
 <property name="PAViews_CODE" value="1" type="GuiHandlerData"/>
-<property name="PAViews_DEVICE" value="7" type="GuiHandlerData"/>
-<property name="PAViews_SCHEMATIC" value="1" type="GuiHandlerData"/>
+<property name="PAViews_DEVICE" value="9" type="GuiHandlerData"/>
+<property name="PAViews_SCHEMATIC" value="2" type="GuiHandlerData"/>
 <property name="PowerItemTreeTablePanel_POWER_ITEM_TREE_TABLE" value="3" type="GuiHandlerData"/>
 <property name="PowerPropPanel_LOAD_POWER_PROPERTIES" value="1" type="GuiHandlerData"/>
 <property name="PowerResultSummaryPanel_CLICK_FOR_MORE_DETAILS" value="1" type="GuiHandlerData"/>
@@ -87,11 +87,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PrimitivesMenu_HIGHLIGHT_LEAF_CELLS" value="1" type="GuiHandlerData"/>
 <property name="ProjectDashboardView_DASHBOARD" value="1" type="GuiHandlerData"/>
 <property name="ProjectDashboardView_TABBED_PANE" value="1" type="GuiHandlerData"/>
+<property name="ProjectSettingsGadget_PROJECT_LOCATION" value="1" type="GuiHandlerData"/>
 <property name="ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED" value="2" type="GuiHandlerData"/>
 <property name="PropertyPanels_STATISTICS_TABLE" value="2" type="GuiHandlerData"/>
 <property name="RDICommands_COPY" value="1" type="GuiHandlerData"/>
 <property name="RDICommands_PROPERTIES" value="1" type="GuiHandlerData"/>
-<property name="RDICommands_SAVE_FILE" value="29" type="GuiHandlerData"/>
+<property name="RDICommands_SAVE_FILE" value="42" type="GuiHandlerData"/>
 <property name="RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES" value="2" type="GuiHandlerData"/>
 <property name="SaveProjectUtils_DONT_SAVE" value="1" type="GuiHandlerData"/>
 <property name="SaveSchematicDialog_SPECIFY_OUTPUT_PDF_FILE" value="11" type="GuiHandlerData"/>
@@ -103,8 +104,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SchematicView_TOGGLE_AUTOHIDE_PINS_FOR_SELECTED_CELLS" value="2" type="GuiHandlerData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="15" type="GuiHandlerData"/>
 <property name="SrcMenu_OPEN_SELECTED_SOURCE_FILES" value="2" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="2" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="4" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="1" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="31" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="29" type="TclMode"/>
 </item>
 </section>
 </application>

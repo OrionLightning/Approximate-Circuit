@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Nov  1 10:49:47 2021
+| Date         : Mon Nov 15 18:32:25 2021
 | Host         : DESKTOP-70RNJ0N running 64-bit major release  (build 9200)
 | Command      : report_utilization -file SOCadder_utilization_synth.rpt -pb SOCadder_utilization_synth.pb
 | Design       : SOCadder
@@ -147,7 +147,7 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | OBUF     |   32 |                  IO |
-| LUT3     |   24 |                 LUT |
+| LUT3     |   32 |                 LUT |
 | IBUF     |   24 |                  IO |
 +----------+------+---------------------+
 

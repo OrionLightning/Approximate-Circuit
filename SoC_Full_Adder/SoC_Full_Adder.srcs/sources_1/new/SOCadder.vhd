@@ -32,25 +32,48 @@ entity SOCadder is
 
 end SOCadder;
 
-architecture Behavioral of SOCadder is
+architecture RTL of SOCadder is
 
-signal s_inv_1 : std_logic_vector(N-1 downto 0);
+--signal s_inv_1 : std_logic_vector(N-1 downto 0);
+
+signal s_WIRE_1 : std_logic_vector(N-1 downto 0);
+signal s_WIRE_2 : std_logic_vector(N-1 downto 0);
+signal s_WIRE_3 : std_logic_vector(N-1 downto 0);
 
 begin
 
     generate_N_bit_adder:
     for k in 0 to N-1 generate
-    
+        
+        
         -- Full adder (exact)
-        S(k) <= A(k) XOR B(k) XOR Cin(k) ;
-        Cout(k) <= (A(k) AND B(k)) OR (Cin(k) AND A(k)) OR (Cin(k) AND B(k)) ;
+        --S(k) <= A(k) XOR B(k) XOR Cin(k) ;
+        --Cout(k) <= (A(k) AND B(k)) OR (Cin(k) AND A(k)) OR (Cin(k) AND B(k)) ;
     
         -- Full adder INXA1 (Approx.)
-        s_inv_1(k) <= A(k) XOR B(k) XOR Cin(k) ; -- Signal for binding S_a and Cout_a
+        --s_inv_1(k) <= A(k) XOR B(k) XOR Cin(k) ; -- Signal for binding S_a and Cout_a
     
-        S_a(k) <= s_inv_1(k);
-        Cout_a(k) <= NOT(s_inv_1(k)) ;
+        --S_a(k) <= s_inv_1(k);
+        --Cout_a(k) <= NOT(s_inv_1(k)) ;
+        
+        -- I decided to change my coding style for better efficiency results
+        -- It is also more readable now
+        
+        --Alternative Code for Full adder (exact)
+        s_WIRE_1(k) <= A(k) xor B(k);
+        s_WIRE_2(k) <= s_WIRE_1(k) and Cin(k);
+        s_WIRE_3(k) <= A(k) and B(k);
+ 
+        S(k)   <= s_WIRE_1(k) xor Cin(k);
+        Cout(k) <= s_WIRE_2(k) or s_WIRE_3(k);
+        
+        -- Alternative Code for Full adder INXA1 (Approx.)
+        s_WIRE_1(k) <=  A(k) xor B(k);
+        s_WIRE_2(k) <= s_WIRE_1(k) and Cin(k);
+
+        S_a(k) <= s_WIRE_2(k);
+        Cout_a(k) <= NOT(s_WIRE_2(k));        
 
     end generate generate_N_bit_adder;
     
-end Behavioral;
+end RTL;
