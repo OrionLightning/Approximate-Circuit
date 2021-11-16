@@ -43,7 +43,7 @@ signal s_WIRE_3 : std_logic_vector(N-1 downto 0);
 begin
 
     generate_N_bit_adder:
-    for k in 0 to N-1 generate
+    for k in 0 to N-2 generate
         
         
         -- Full adder (exact)
@@ -66,14 +66,24 @@ begin
  
         S(k)   <= s_WIRE_1(k) xor Cin(k);
         Cout(k) <= s_WIRE_2(k) or s_WIRE_3(k);
+
+        Cin(k+1) <= Cout(k);
         
         -- Alternative Code for Full adder INXA1 (Approx.)
         s_WIRE_1(k) <=  A(k) xor B(k);
         s_WIRE_2(k) <= s_WIRE_1(k) and Cin(k);
 
         S_a(k) <= s_WIRE_2(k);
-        Cout_a(k) <= NOT(s_WIRE_2(k));        
+        Cout_a(k) <= NOT(s_WIRE_2(k));
+
 
     end generate generate_N_bit_adder;
+
+    s_WIRE_1(N-1) <= A(N-1) xor B(N-1);
+    s_WIRE_2(N-1) <= s_WIRE_1(k) and Cin(N-1);
+    s_WIRE_3(N-1) <= A(N-1) and B(N-1);
+
+    S(N-1)   <= s_WIRE_1(N-1) xor Cin(N-1);
+    Cout(N-1) <= s_WIRE_2(N-1) or s_WIRE_3(N-1);
     
 end RTL;
