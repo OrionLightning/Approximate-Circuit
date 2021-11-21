@@ -1,0 +1,25 @@
+Slide 6:
+Vortragender Wechselt:
+In many booleanfunctions the error can be interpreted with the help of the Hamming distance. This was also possible for the one bit addition presented on the previous slide. 
+But when we calculate the addition of two multibit numbers the output must also be interpreted as number.
+
+
+Slide 7:
+So the Hamming distance is no of interest. The errer between the exact solution and the approximated solution is the difference. To analyze it we must subtract the two numbers.
+
+
+Slide 8:
+As the system grows exponentially  truth table analysis is not recommended anymore.
+As solution to this we use a Binary Decision Diagram or short BDD. A BDD is an graph to represent the Boolean function.
+
+It consists of nodes, each representing one input Bit, and edges. An edge represents the the value of the input. As demonstration we want to present this small example.
+We start with X[0]. There are two edges, one for when x[0] = 0 and for x[0] = 1. The edges go to the next Input x[1]. If both x[0] and x[1] are 0 then the solution is 0, so the edge goes directly to the 0. 
+This reduction of possible paths lead to a much smaller representation then a truth table .
+
+It is possible to compute and analyze BDD automatically and the complexity only grows either linear or quadratic
+ with the amount of inputs, depending of the operatione on the BDD.(Exact numbers in “An Introduction to BDDs” by Henrik Reif Andersen)
+
+
+Slide 9 and 10:
+"Current Status" and "Future Plan"
+Depending on the time. Either just reading the slides or adding a some empty phrases to use more time.
