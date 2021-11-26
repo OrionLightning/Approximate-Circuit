@@ -6,12 +6,7 @@
 -- Design Name: N-bit Adder with exact and approximate approaches
 -- Module Name: SOCadder - Behavioral
 -- Description: 
--- 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+
 ----------------------------------------------------------------------------------
 
 
@@ -23,67 +18,38 @@ entity SOCadder is
     generic ( N : integer := 8); -- Change N for desired bit adder
     Port    ( A : in std_logic_vector(N-1 downto 0);
               B : in std_logic_vector(N-1 downto 0);
-              Cin : in std_logic_vector(N-1 downto 0);
+              Cin : in std_logic;
               S : out std_logic_vector(N-1 downto 0);
-              Cout : out std_logic_vector(N-1 downto 0);
-              S_a : out std_logic_vector(N-1 downto 0); --Approximate Sum out
-              Cout_a : out std_logic_vector(N-1 downto 0) --Approximate Carry out
+              Cout : out std_logic
            );
 
 end SOCadder;
 
 architecture RTL of SOCadder is
+    Component full_adder_exakt is
+        Port(A, B, Cin: in std_logic;
+            S, Cout: out std_logic);
+    end Component;
+    
+    Component full_adder_appr is
+        Port(A, B, Cin: in std_logic;
+            S, Cout: out std_logic);
+    end Component;
 
---signal s_inv_1 : std_logic_vector(N-1 downto 0);
-
-signal s_WIRE_1 : std_logic_vector(N-1 downto 0);
-signal s_WIRE_2 : std_logic_vector(N-1 downto 0);
-signal s_WIRE_3 : std_logic_vector(N-1 downto 0);
+signal s_carry : std_logic_vector(N downto 0);
 
 begin
+    
+    s_carry(0) <= Cin; Cout <= s_carry(N);
 
     generate_N_bit_adder:
-    for k in 0 to N-2 generate
+    for k in 0 to N-1 generate
+        FA_k: full_adder_exakt port map (A => A(k), B => B(k), Cin => s_carry(k), S => S(k), Cout => s_carry(k+1));
+                                         
+        --FA_k: full_adder_appr port map (A => A(k), B => B(k), Cin => s_carry(k), S => S(k), Cout => s_carry(k+1));
         
-        
-        -- Full adder (exact)
-        --S(k) <= A(k) XOR B(k) XOR Cin(k) ;
-        --Cout(k) <= (A(k) AND B(k)) OR (Cin(k) AND A(k)) OR (Cin(k) AND B(k)) ;
-    
-        -- Full adder INXA1 (Approx.)
-        --s_inv_1(k) <= A(k) XOR B(k) XOR Cin(k) ; -- Signal for binding S_a and Cout_a
-    
-        --S_a(k) <= s_inv_1(k);
-        --Cout_a(k) <= NOT(s_inv_1(k)) ;
-        
-        -- I decided to change my coding style for better efficiency results
-        -- It is also more readable now
-        
-        --Alternative Code for Full adder (exact)
-        s_WIRE_1(k) <= A(k) xor B(k);
-        s_WIRE_2(k) <= s_WIRE_1(k) and Cin(k);
-        s_WIRE_3(k) <= A(k) and B(k);
- 
-        S(k)   <= s_WIRE_1(k) xor Cin(k);
-        Cout(k) <= s_WIRE_2(k) or s_WIRE_3(k);
-
-        Cin(k+1) <= Cout(k);
-        
-        -- Alternative Code for Full adder INXA1 (Approx.)
-        s_WIRE_1(k) <=  A(k) xor B(k);
-        s_WIRE_2(k) <= s_WIRE_1(k) and Cin(k);
-
-        S_a(k) <= s_WIRE_2(k);
-        Cout_a(k) <= NOT(s_WIRE_2(k));
-
-
     end generate generate_N_bit_adder;
-
-    s_WIRE_1(N-1) <= A(N-1) xor B(N-1);
-    s_WIRE_2(N-1) <= s_WIRE_1(k) and Cin(N-1);
-    s_WIRE_3(N-1) <= A(N-1) and B(N-1);
-
-    S(N-1)   <= s_WIRE_1(N-1) xor Cin(N-1);
-    Cout(N-1) <= s_WIRE_2(N-1) or s_WIRE_3(N-1);
+    
+    
     
 end RTL;

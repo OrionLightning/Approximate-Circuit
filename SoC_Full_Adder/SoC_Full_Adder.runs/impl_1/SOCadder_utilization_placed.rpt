@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Nov 15 18:33:13 2021
+| Date         : Fri Nov 26 13:33:46 2021
 | Host         : DESKTOP-70RNJ0N running 64-bit major release  (build 9200)
 | Command      : report_utilization -file SOCadder_utilization_placed.rpt -pb SOCadder_utilization_placed.pb
 | Design       : SOCadder
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs              |   16 |     0 |     53200 |  0.03 |
-|   LUT as Logic          |   16 |     0 |     53200 |  0.03 |
+| Slice LUTs              |    8 |     0 |     53200 |  0.02 |
+|   LUT as Logic          |    8 |     0 |     53200 |  0.02 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
 | Slice Registers         |    0 |     0 |    106400 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |    106400 |  0.00 |
@@ -67,13 +67,13 @@ Table of Contents
 +------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                | Used | Fixed | Available | Util% |
 +------------------------------------------+------+-------+-----------+-------+
-| Slice                                    |    5 |     0 |     13300 |  0.04 |
+| Slice                                    |    3 |     0 |     13300 |  0.02 |
 |   SLICEL                                 |    0 |     0 |           |       |
-|   SLICEM                                 |    5 |     0 |           |       |
-| LUT as Logic                             |   16 |     0 |     53200 |  0.03 |
+|   SLICEM                                 |    3 |     0 |           |       |
+| LUT as Logic                             |    8 |     0 |     53200 |  0.02 |
 |   using O5 output only                   |    0 |       |           |       |
-|   using O6 output only                   |    0 |       |           |       |
-|   using O5 and O6                        |   16 |       |           |       |
+|   using O6 output only                   |    4 |       |           |       |
+|   using O5 and O6                        |    4 |       |           |       |
 | LUT as Memory                            |    0 |     0 |     17400 |  0.00 |
 |   LUT as Distributed RAM                 |    0 |     0 |           |       |
 |   LUT as Shift Register                  |    0 |     0 |           |       |
@@ -114,9 +114,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   56 |     0 |       200 | 28.00 |
-|   IOB Master Pads           |   26 |       |           |       |
-|   IOB Slave Pads            |   28 |       |           |       |
+| Bonded IOB                  |   26 |     0 |       200 | 13.00 |
+|   IOB Master Pads           |   12 |       |           |       |
+|   IOB Slave Pads            |   13 |       |           |       |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
@@ -172,9 +172,10 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |   32 |                  IO |
-| LUT3     |   32 |                 LUT |
-| IBUF     |   24 |                  IO |
+| IBUF     |   17 |                  IO |
+| OBUF     |    9 |                  IO |
+| LUT5     |    8 |                 LUT |
+| LUT3     |    4 |                 LUT |
 +----------+------+---------------------+
 
 
