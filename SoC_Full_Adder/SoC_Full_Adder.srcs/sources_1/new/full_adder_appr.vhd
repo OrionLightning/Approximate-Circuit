@@ -10,6 +10,8 @@
 -- Tool Versions: 
 -- Description: 1 Bit approximate Full adder (INXA 1)
 
+-- XOR = OR + NAND + AND
+
 ----------------------------------------------------------------------------------
 
 
@@ -34,9 +36,12 @@ signal s_WIRE_3 : std_logic;
 
 begin
 
+        --s_WIRE_1 <=  (A nand B) and (A or B);
+        --s_WIRE_2 <= (s_WIRE_1 nand Cin) and (s_WIRE_1 or Cin);
+        
         s_WIRE_1 <=  A xor B;
-        s_WIRE_2 <= s_WIRE_1 and Cin;
-
+        s_WIRE_2 <= s_WIRE_1 xor Cin;
+        
         S <= s_WIRE_2;
         Cout <= NOT(s_WIRE_2);
 

@@ -15,7 +15,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 
 entity SOCadder is
-    generic ( N : integer := 8); -- Change N for desired bit adder
+    generic ( N : integer := 16); -- Change N for desired bit adder
     Port    ( A : in std_logic_vector(N-1 downto 0);
               B : in std_logic_vector(N-1 downto 0);
               Cin : in std_logic;
@@ -44,9 +44,9 @@ begin
 
     generate_N_bit_adder:
     for k in 0 to N-1 generate
-        FA_k: full_adder_exakt port map (A => A(k), B => B(k), Cin => s_carry(k), S => S(k), Cout => s_carry(k+1));
+        --FA_k: full_adder_exakt port map (A => A(k), B => B(k), Cin => s_carry(k), S => S(k), Cout => s_carry(k+1));
                                          
-        --FA_k: full_adder_appr port map (A => A(k), B => B(k), Cin => s_carry(k), S => S(k), Cout => s_carry(k+1));
+        FA_k: full_adder_appr port map (A => A(k), B => B(k), Cin => s_carry(k), S => S(k), Cout => s_carry(k+1));
         
     end generate generate_N_bit_adder;
     
