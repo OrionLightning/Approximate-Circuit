@@ -18,7 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param synth.incrementalSynthesisCache C:/Users/kagan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8524-DESKTOP-70RNJ0N/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
@@ -35,7 +35,7 @@ set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
 set_property ip_output_repo {c:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  {C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.srcs/sources_1/new/full_adder_exakt.vhd}
+  {C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.srcs/sources_1/new/full_adder_appr.vhd}
   {C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.srcs/sources_1/new/SOCadder.vhd}
 }
 # Mark all dcp files as not used in implementation to prevent them from being

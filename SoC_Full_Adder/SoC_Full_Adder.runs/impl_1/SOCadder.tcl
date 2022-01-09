@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -69,6 +68,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
+  set_param synth.incrementalSynthesisCache C:/Users/kagan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8524-DESKTOP-70RNJ0N/incrSyn
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part_repo_paths {C:/Users/kagan/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
   set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
