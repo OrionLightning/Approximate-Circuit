@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Jan  2 18:20:12 2022
+| Date             : Mon Feb 21 14:16:10 2022
 | Host             : DESKTOP-70RNJ0N running 64-bit major release  (build 9200)
 | Command          : report_power -file SOCadder_power_routed.rpt -pb SOCadder_power_summary_routed.pb -rpx SOCadder_power_routed.rpx
 | Design           : SOCadder
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 17.853 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                     |
-| Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 16.813                           |
-| Device Static (W)        | 1.039                            |
-| Effective TJA (C/W)      | 11.5                             |
-| Max Ambient (C)          | 0.0                              |
-| Junction Temperature (C) | 125.0                            |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.108        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.004        |
+| Device Static (W)        | 0.104        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 83.8         |
+| Junction Temperature (C) | 26.2         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,12 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.371 |       36 |       --- |             --- |
-|   LUT as Logic |     0.371 |       25 |     53200 |            0.05 |
-| Signals        |     1.076 |       69 |       --- |             --- |
-| I/O            |    15.366 |       50 |       200 |           25.00 |
-| Static Power   |     1.039 |          |           |                 |
-| Total          |    17.853 |          |           |                 |
+| Clocks         |     0.000 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |       35 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       27 |     53200 |            0.05 |
+| Signals        |    <0.001 |       68 |       --- |             --- |
+| I/O            |     0.003 |       50 |       200 |           25.00 |
+| Static Power   |     0.104 |          |           |                 |
+| Total          |     0.108 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,20 +68,20 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.878 |       1.580 |      0.299 |
-| Vccaux    |       1.800 |     1.347 |       1.247 |      0.100 |
+| Vccint    |       1.000 |     0.008 |       0.001 |      0.007 |
+| Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     7.217 |       7.216 |      0.001 |
+| Vcco18    |       1.800 |     0.002 |       0.001 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.026 |       0.000 |      0.026 |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |
+| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -141,7 +142,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| SOCadder |    16.813 |
+| SOCadder |     0.004 |
 +----------+-----------+
 
 
