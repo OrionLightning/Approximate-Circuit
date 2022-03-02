@@ -18,9 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/kagan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8524-DESKTOP-70RNJ0N/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -46,6 +43,9 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.srcs/constrs_1/new/timing_co.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.srcs/constrs_1/new/timing_co.xdc}}]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

@@ -60,15 +60,12 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  set_param synth.incrementalSynthesisCache C:/Users/kagan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8524-DESKTOP-70RNJ0N/incrSyn
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part_repo_paths {C:/Users/kagan/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
   set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
@@ -79,6 +76,7 @@ set rc [catch {
   set_property ip_output_repo {{C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet {{C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.runs/synth_1/SOCadder.dcp}}
+  read_xdc {{C:/Users/kagan/Documents/Vivado Projects/SoC_Full_Adder/SoC_Full_Adder.srcs/constrs_1/new/timing_co.xdc}}
   link_design -top SOCadder -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]

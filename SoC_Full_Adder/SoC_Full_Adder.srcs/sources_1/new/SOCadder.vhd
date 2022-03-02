@@ -15,7 +15,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 
 entity SOCadder is
-    generic ( N : integer := 16); -- Change N for desired bit adder
+    generic ( N : integer := 4); -- Change N for desired bit adder
     Port    ( A : in std_logic_vector(N-1 downto 0);
               B : in std_logic_vector(N-1 downto 0);
               Cin : in std_logic;

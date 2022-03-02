@@ -1,0 +1,1 @@
+-wto "03b34cd960d141d7b72b52a5e111a7fd" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "SOCadder_behav" "xil_defaultlib.SOCadder" -log "elaborate.log" 
